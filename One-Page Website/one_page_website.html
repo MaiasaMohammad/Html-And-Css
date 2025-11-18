@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maiasa One-Page Website</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global Styling */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f0f2f5;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,0.75);
+            backdrop-filter: blur(8px);
+            padding: 15px 25px;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* Hero Section */
+        #home {
+            height: 100vh;
+            background: linear-gradient(to bottom right, #005bea, #00c6fb);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #home h1 {
+            font-size: 3.2rem;
+            margin: 0;
+            animation: fadeInDown 1s ease;
+        }
+
+        #home p {
+            max-width: 600px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            animation: fadeInUp 1s ease;
+        }
+
+      
+        /* Section Styling */
+        section {
+            padding: 80px 40px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        /* Image Gallery */
+        #pictures .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        #pictures img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        #pictures img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+        }
+
+        /* Video Section */
+        iframe {
+            display: block;
+            margin: auto;
+            border-radius: 12px;
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.25);
+            max-width: 100%;
+        }
+
+        /* Contact Form */
+        #contact form {
+            max-width: 450px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.15);
+        }
+
+        #contact label {
+            font-weight: 600;
+        }
+
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: none;
+            border-radius: 8px;
+            background: #e7ebee;
+        }
+
+        #contact input[type="submit"] {
+            background: #005bea;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #contact input[type="submit"]:hover {
+            background: #003f9e;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0f0f0f;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#pictures">Pictures</a>
+        <a href="#videos">Videos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero / Home Section -->
+    <section id="home">
+        <h1>Welcome to My One-Page Website</h1>
+        <p>A modern, stylish single-page experience built with clean HTML, creative design, and smooth navigation.</p>
+    </section>
+
+    <!-- Pictures -->
+    <section id="pictures">
+        <h2>Picture Gallery</h2>
+        <div class="gallery">
+            <img src="https://cdn.pixabay.com/photo/2025/11/04/19/16/astronomy-9937087_1280.jpg" alt="Image 1">
+            <img src="https://cdn.pixabay.com/photo/2025/11/04/19/16/astronomy-9937087_1280.jpg" alt="Image 1">
+            <img src="https://cdn.pixabay.com/photo/2025/11/04/19/16/astronomy-9937087_1280.jpg" alt="Image 1">
+            <img src="https://cdn.pixabay.com/photo/2025/11/04/19/16/astronomy-9937087_1280.jpg" alt="Image 1">
+        </div>
+    </section>
+
+    <!-- Videos -->
+    <section id="videos">
+        <h2>Featured Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jwgf3wmiA04?si=Imk9DX7SDNt1l43a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label>Name:</label>
+            <input type="text" placeholder="Your name">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Your email">
+
+            <label>Message:</label>
+            <textarea rows="4" placeholder="Your message"></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Maiasa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
