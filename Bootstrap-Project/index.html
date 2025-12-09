@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maiasa Mohammad's Movie Showtimes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .jumbotron {
+            background-color: #343a40;
+            color: white;
+            padding: 50px 25px;
+        }
+        .card-deck {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            width: 18rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Maiasa Mohammad's Movies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#showtimes">Showtimes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#deals">Deals</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron (Header Section) -->
+    <header class="jumbotron text-center">
+        <h1 class="display-4">Welcome to Maiasa Mohammad's Movie World</h1>
+        <p class="lead">Explore the latest movies and their showtimes.</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <h2>About</h2>
+        <p>This is my personal movie website, showcasing the best movie releases and their respective showtimes. Keep an eye out for special deals!</p>
+    </section>
+
+    <!-- Showtimes Section -->
+    <section id="showtimes" class="container py-5">
+        <h2>Showtimes</h2>
+        <div class="card-deck">
+            <!-- Kong: Skull Island Card -->
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTcwMjcxYTQtYjJlOS00YTE1LWIyZGYtOGRlOTBlMWZmYTliXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Kong Skull Island">
+                <div class="card-body">
+                    <h5 class="card-title">Kong: Skull Island</h5>
+                    <p class="card-text">A group of scientists and soldiers discover a mysterious island inhabited by strange creatures, including the giant ape Kong.</p>
+                    <span class="badge bg-info text-dark">12:00 p.m.</span>
+                    <span class="badge bg-info text-dark">1:30 p.m.</span>
+                    <span class="badge bg-info text-dark">3:00 p.m.</span>
+                    <span class="badge bg-info text-dark">5:30 p.m.</span>
+                    <span class="badge bg-info text-dark">7:00 p.m.</span>
+                    <span class="badge bg-info text-dark">9:30 p.m.</span>
+                </div>
+            </div>
+
+            <!-- Ghost in the Shell Card -->
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzBkNjdjZTctNjdhOS00NmIyLTlkNjQtY2EwNGMwYmZjNTIxXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Ghost in the Shell">
+                <div class="card-body">
+                    <h5 class="card-title">Ghost in the Shell</h5>
+                    <p class="card-text">In a futuristic world, a cybernetic human hunts down criminals and uncovers the truth about her own origins.</p>
+                    <span class="badge bg-info text-dark">12:00 p.m.</span>
+                    <span class="badge bg-info text-dark">1:30 p.m.</span>
+                    <span class="badge bg-info text-dark">3:00 p.m.</span>
+                    <span class="badge bg-info text-dark">5:30 p.m.</span>
+                    <span class="badge bg-info text-dark">7:00 p.m.</span>
+                    <span class="badge bg-info text-dark">9:30 p.m.</span>
+                </div>
+            </div>
+
+            <!-- Beauty and the Beast Card -->
+            <div class="card">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/p_beautyandthebeast_19752_32e65c36.jpeg" class="card-img-top" alt="Beauty and the Beast">
+                <div class="card-body">
+                    <h5 class="card-title">Beauty and the Beast</h5>
+                    <p class="card-text">A young woman is taken prisoner by a Beast in his castle, but she learns to look beyond his hideous exterior and recognize the kind heart and soul of the true Prince within.</p>
+                    <span class="badge bg-info text-dark">12:00 p.m.</span>
+                    <span class="badge bg-info text-dark">1:30 p.m.</span>
+                    <span class="badge bg-info text-dark">3:00 p.m.</span>
+                    <span class="badge bg-info text-dark">5:30 p.m.</span>
+                    <span class="badge bg-info text-dark">7:00 p.m.</span>
+                    <span class="badge bg-info text-dark">9:30 p.m.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section id="deals" class="container py-5">
+        <h2>Deals</h2>
+        <p>Check out our latest movie deals! Buy one get one free for all movie tickets this weekend!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-light py-4">
+        <p>&copy; 2025 Maiasa Mohammad. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
